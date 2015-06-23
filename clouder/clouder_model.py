@@ -170,7 +170,7 @@ class ClouderModel(models.AbstractModel):
         if not self.env.ref('clouder.clouder_settings').email_sysadmin:
             raise except_orm(
                 _('Data error!'),
-                _("You need to specify the sysadmin email in configuration"))
+                _("You need to specify the sysadmin email under Clouder > Configuration > Configure Clouder"))
 
     @api.multi
     def create_log(self, action):
