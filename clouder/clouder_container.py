@@ -49,7 +49,7 @@ class ClouderServer(models.Model):
         if not self.env.ref('clouder.clouder_settings').email_sysadmin:
             raise except_orm(
                 _('Data error!'),
-                _("You need to specify the sysadmin email in configuration"))
+                _("You need to specify the sysadmin email under Clouder > Configuration > Configure Clouder"))
 
         self.execute_local(['mkdir', '/tmp/key_' + self.env.uid])
         self.execute_local(['ssh-keygen', '-t', 'rsa', '-C',
