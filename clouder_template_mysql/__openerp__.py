@@ -26,7 +26,7 @@
     'category': 'Clouder',
     'depends': ['clouder',
                 'clouder_template_shinken'],
-    'author': 'Yannick Buron (Clouder)',
+    'author': 'Yannick Buron/Nicolas Petit (Clouder)',
     'license': 'Other OSI approved licence',
     'website': 'https://github.com/clouder-community/clouder',
     'description': """
